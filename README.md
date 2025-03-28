@@ -46,12 +46,8 @@ npx playwright show-report
 npx playwright test --ui
 ```
 
-### .env file
-```
-URL=http://uitestingplayground.com/ajax
-USERNAME='test@test.com'
-PASSWORD='Welcome1'
-```
+### .gitignore
+In reality it is best to leave the user in `.env` folder local
 
 ### Visual testing
 > When asserting with screenshots, tests need to be run 2 times. First time is to create a baseline, second one is to compare.

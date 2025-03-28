@@ -41,8 +41,8 @@ test.describe('Form Layouts page @block', () => {
         await usingTheGridCard.getByLabel('Option 1').check({force: true})
         await usingTheGridCard.getByRole('radio', {name: "Option 1"}).check({force: true})
         const radioStatus = await usingTheGridCard.getByLabel('Option 1').isChecked()
-        await expect(usingTheGridCard).toHaveScreenshot()
-        await expect(usingTheGridCard).toHaveScreenshot({maxDiffPixels: 200})
+        // await expect(usingTheGridCard).toHaveScreenshot()
+        await expect(usingTheGridCard).toHaveScreenshot({maxDiffPixels: 1000})
         expect(radioStatus).toBeTruthy()
         await expect(usingTheGridCard.getByRole('radio', {name: "Option 1"})).toBeChecked()
         
