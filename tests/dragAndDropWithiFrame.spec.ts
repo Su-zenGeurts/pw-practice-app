@@ -3,6 +3,7 @@ import { test } from '../test-options'
 
 test('drag and drop with iframe', async ({page, globalsQaUrl}) => {
     await page.goto(globalsQaUrl)
+    await page.locator(".fc-dialog-container").getByRole('button', { name: 'Consent' }).click() 
 
     // await page.locator('li', {hasText: "High Tatras 2"}).click()
     const frame = page.frameLocator('[rel-title="Photo Manager"] iframe')
