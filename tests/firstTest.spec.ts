@@ -49,7 +49,7 @@ test('Locatinth with getBy..', async ({page}) => {
 
     await page.getByText('Using the Grid').click()
 
-    // await page.getByTestId('SignIn').click()
+    // await page.getByTestId('SignIn').click() //<button data-testid="directions">Up</button>
 
     await page.getByTitle('IoT Dashboard').click()
 })
